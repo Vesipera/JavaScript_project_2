@@ -11,7 +11,7 @@ function loadData() {
     var currentDate = tempDate.toISOString().slice(0,10); // Muutetaan päiväys ISO-muotoon ja poimitaan siitä vuosi, kuukausi ja päivä
     
     // Haettavan json-tiedon osoite
-    var url = "http://www.webcal.fi/cal.php?id=2&format=json&start_year=current_year&end_year=current_year&tz=Europe%2FHelsinki";
+    var url = "https://www.webcal.fi/cal.php?id=2&format=json&start_year=current_year&end_year=current_year&tz=Europe%2FHelsinki";
     var xmlhttp = new XMLHttpRequest(); // Muuttuja AJAX-pyyntöä varten
     xmlhttp.open("GET", url, true);   // Luodaan pyyntö aiemmin määriteltyyn osoitteeseen
     xmlhttp.send(); // Lähetetään pyyntö
